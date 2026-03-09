@@ -1,0 +1,147 @@
+/* ================================
+   Royal Hyrule Theme – style.css
+   Elegant navy + gold Zelda aesthetic
+   Shared across ALL pages
+================================ */
+
+/* ---------- Root Variables ---------- */
+:root {
+    --hyrule-navy: #0a1a3d;
+    --hyrule-navy-light: #132b63;
+    --hyrule-gold: #d4af37;
+    --hyrule-gold-light: #f5e6a7;
+    --text-light: #f2f2f2;
+    --text-dark: #222;
+    --bg-light: #fafafa;
+    --max-width: 900px;
+    --radius: 8px;
+    --transition: 0.3s ease;
+}
+
+/* ---------- Global Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- Layout Container ---------- */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: var(--hyrule-navy);
+    color: var(--text-light);
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 4px solid var(--hyrule-gold);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    background: var(--hyrule-navy-light);
+    border-bottom: 3px solid var(--hyrule-gold);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+}
+
+nav a {
+    color: var(--hyrule-gold-light);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--text-light);
+    text-shadow: 0 0 8px var(--hyrule-gold);
+}
+
+/* ---------- Headings ---------- */
+h2, h3 {
+    color: var(--hyrule-navy);
+    border-left: 5px solid var(--hyrule-gold);
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Paragraphs & Lists ---------- */
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+/* ---------- Images ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 3px solid var(--hyrule-gold);
+    margin: 15px 0;
+}
+
+/* ---------- Content Boxes ---------- */
+.box {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid var(--hyrule-gold);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: var(--hyrule-navy);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    border-top: 4px solid var(--hyrule-gold);
+    font-size: 0.9rem;
+}
+
+/* ---------- Responsive Design ---------- */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
