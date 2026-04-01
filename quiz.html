@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda Item Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Zelda Item Personality Quiz</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top5.html">Top 5 Items</a></li>
+        <li><a href="bts.html">Behind the Scenes</a></li>
+        <li><a href="creations.html">Fan Creations</a></li>
+        <li><a href="qa.html">Q & A</a></li>
+        <li><a href="quiz.html">Item Quiz</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Which Zelda Item Fits You?</h2>
+        <p>
+            Answer the questions below to discover which iconic item from the Legend of Zelda series 
+            best matches your personality and playstyle.
+        </p>
+
+        <label for="q1"><strong>1. What is your playstyle?</strong></label>
+        <select id="q1">
+            <option value="power">Aggressive and bold</option>
+            <option value="defense">Careful and strategic</option>
+            <option value="utility">Creative and clever</option>
+            <option value="music">Calm and thoughtful</option>
+        </select>
+
+        <br><br>
+
+        <label for="q2"><strong>2. What environment do you prefer?</strong></label>
+        <select id="q2">
+            <option value="power">Volcanoes / battlefields</option>
+            <option value="defense">Castles / fortresses</option>
+            <option value="utility">Forests / mountains</option>
+            <option value="music">Sacred / peaceful places</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="calculateItem()">Find My Item</button>
+
+        <h3 id="result"></h3>
+    </div>
+
+</div>
+
+<footer>
+    <p>Created for CIS Web Design • The Legend of Zelda Fandom Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
